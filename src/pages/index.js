@@ -1,1 +1,1 @@
-export * from './ShowTripDetails';
+export * from './Dashboard';

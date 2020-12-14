@@ -1,32 +1,32 @@
 import React from 'react';
 import {
- BrowserRouter as Router,
+  BrowserRouter as Router,
   Switch,
   Route,
 } from 'react-router-dom';
-import ShowTripDetails from './pages/ShowTripDetails';
+import { DashboardLayout } from './pages/Dashboard';
 import './App.css';
 function App() {
   const routes = [{
     path: '/',
-    component:ShowTripDetails ,
+    component: DashboardLayout,
   },
-]
+  ]
   return (
     <div >
-      <header className="App-header"> 
-   <Router>
-   <Switch>
-        {routes.map(({ path, component }, index) => (
-          <Route exact path={path} component={component} key={index} />
-        ))}
+      <header className="App-header">
+        <Router>
+          <Switch>
+            {routes.map(({ path, component }, index) => (
+              <Route exact path={path} component={component} key={index} />
+            ))}
 
-      </Switch>
-   </Router>
-     
+          </Switch>
+        </Router>
+
       </header>
 
- </div>
+    </div>
   );
 }
 

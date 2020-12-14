@@ -1,1 +1,1 @@
-export const BASE_URL="https://detangled.in/develop/190d5d4b-dc3c-420d-a44f-adb68a813a0b/events";
+export const BASE_URL="http://localhost:3000";
